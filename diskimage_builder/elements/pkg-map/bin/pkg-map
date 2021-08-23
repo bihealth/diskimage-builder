@@ -20,13 +20,13 @@ import logging
 import os
 import sys
 
-
 log = logging.getLogger()
 
 
 def os_family(distro):
     family = None
-    if distro in ['fedora', 'rhel', 'rhel7', 'centos', 'centos7', 'openeuler']:
+    if distro in ['fedora', 'rhel', 'rhel7', 'centos', 'centos7',
+                  'openeuler', 'rocky']:
         family = 'redhat'
     elif distro in ['debian', 'ubuntu']:
         family = 'debian'
@@ -53,10 +53,10 @@ def main():
                         help='The element (namespace) to use for translation.')
     parser.add_argument('--pkg-map', default='',
                         help='Path to specific pkg-map file.  '
-                        '(Useful for testing)')
+                             '(Useful for testing)')
     parser.add_argument('--distro', default=os.environ.get('DISTRO_NAME'),
                         help='The distro name to use for translation.'
-                        ' Defaults to DISTRO_NAME')
+                             ' Defaults to DISTRO_NAME')
     parser.add_argument('--release', default=os.environ.get('DIB_RELEASE'),
                         help='A more specfic name for distribution release')
     parser.add_argument('--missing-ok', action="store_true",

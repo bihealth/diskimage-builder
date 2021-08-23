@@ -29,6 +29,7 @@
         - fedora/build-succeeds
         - opensuse/build-succeeds
         - opensuse/opensuse15-build-succeeds
+        - rocky/build-succeeds
         - ubuntu/bionic-build-succeeds
         - ubuntu/focal-build-succeeds
 
@@ -252,3 +253,14 @@
       nodepool_diskimage:
         base_element: opensuse-minimal
         release: 'tumbleweed'
+
+- job:
+    name: dib-nodepool-functional-openstack-rocky-8-src
+    description: |
+      Test building and booting a Rocky 8 image with Nodepool and
+      OpenStack.
+    parent: dib-nodepool-functional-src-base
+    vars:
+      nodepool_diskimage:
+        base_element: rocky
+        release: '8'

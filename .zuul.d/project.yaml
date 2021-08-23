@@ -20,6 +20,7 @@
         - dib-nodepool-functional-openstack-centos-9-stream-src
         - dib-nodepool-functional-openstack-fedora-35-containerfile-src
         - dib-nodepool-functional-openstack-ubuntu-xenial-src
+        - dib-nodepool-functional-openstack-rocky-8-src
         - dib-nodepool-functional-openstack-ubuntu-bionic-src
         - dib-nodepool-functional-openstack-ubuntu-focal-src
         # NOTE(ianw): 2020-04-22 these have been out of the gate for a
@@ -49,6 +50,7 @@
         - dib-nodepool-functional-openstack-centos-8-stream-src
         - dib-nodepool-functional-openstack-centos-9-stream-src
         - dib-nodepool-functional-openstack-fedora-35-containerfile-src
+        - dib-nodepool-functional-openstack-rocky-8-src
         - dib-nodepool-functional-openstack-ubuntu-xenial-src
         - dib-nodepool-functional-openstack-ubuntu-bionic-src
         - dib-nodepool-functional-openstack-ubuntu-focal-src

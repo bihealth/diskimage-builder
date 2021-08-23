@@ -45,6 +45,7 @@ DEFAULT_SKIP_TESTS=(
     ubuntu/trusty-build-succeeds
     ubuntu/xenial-build-succeeds
     ubuntu/bionic-build-succeeds
+    rocky/build-succeeds
 
     # No longer reasonable to test upstream (lacks a mirror in infra)
     # Note this is centos6 and should probably be removed
